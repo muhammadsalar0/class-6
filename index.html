@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
-    <title>Family Ifo   </title>
+    <title>Family Info</title>
     <style>
         * {
             padding: 0;
             margin: 0;
+            box-sizing: border-box;
         }
 
         img {
@@ -17,34 +18,34 @@
             transform: scale(1);
             margin-bottom: 10px;
         }
+
         img:hover {
             transform: scale(1.1);
             transition: linear 0.5s;
         }
 
-        table {
-            width: 100%;
-        }
-container{
-
-
-
-
-
-    
-}
-        th,
-        td {
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            justify-items: center;
             padding: 20px;
+        }
+
+        .member {
             text-align: center;
         }
 
         .bold {
-            font-weight: 900
+            font-weight: 900;
         }
 
         h1 {
             text-shadow: 5px 4px 5px #000000;
+            text-align: center;
+            font-size: 100px;
+            color: white;
+            margin-bottom: 30px;
         }
 
         p {
@@ -58,61 +59,65 @@ container{
 
         .color-bg {
             background: linear-gradient(to right, #00f7ff, #53a7ec);
-            height: 660px;
+            min-height: 100vh;
+            padding-bottom: 40px;
         }
+
+        media-only
     </style>
+</head>
 
 <body>
+
     <div class="bold color-bg">
-        <h1 style="color:white; text-align: center; font-size: 100px;"> Family-Info</h1>
+        <h1>Family-Info</h1>
 
-        <table>
+        <div class="grid">
 
-            <tr>
-                <td>
-                    <a href="Meer Jahan Hussain.html">
-                        <img src="">
-                        <p style="text-align: center;">Meer Jahan Hussain</p>
-                    </a>
-                </td>
-                <td>
-                    <a href="M.uhamad Ali Hussain.html">
-                        <img src="">
-                        <p style="text-align: center">Muhamad Ali Hussain</p>
-                </td>
+            <div class="member">
+                <a href="Meer Jahan Hussain.html">
+                    <img src="">
+                    <p>Meer Jahan Hussain</p>
+                </a>
+            </div>
 
-                <td>
-                    <a href="muhammad-salar-hussain.html">
-                        <img src="mirage.jpeg">
-                        <p style="text-align: center;">Muhammad-salar-hussain</p>
-                </td>
-                <td>
-                    <a href="Salma.html">
-                        <img src="j10.jpeg">
-                        <p style="text-align: center">Salma</p>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <a href="Sarfraz Hussain.html">
-                        <img src=".jpeg">
-                        <p style="text-align: center">Sarfraz Hussain</p>
-                    </a>
-                </td>
-                <td>
-                    <a href="Shaheena Akhtar.html">
-                        <img src="SU57.jpeg">
-                        <p style="text-align: center;">Shaheena Akhtar</p>
-                    </a>
-                </td>
-                <td></td>
-            </tr>
+            <div class="member">
+                <a href="M.uhamad Ali Hussain.html">
+                    <img src="">
+                    <p>Muhamad Ali Hussain</p>
+                </a>
+            </div>
+
+            <div class="member">
+                <a href="muhammad-salar-hussain.html">
+                    <img src="mirage.jpeg">
+                    <p>Muhammad-salar-hussain</p>
+                </a>
+            </div>
+
+            <div class="member">
+                <a href="Salma.html">
+                    <img src="j10.jpeg">
+                    <p>Salma</p>
+                </a>
+            </div>
+
+            <div class="member">
+                <a href="Sarfraz Hussain.html">
+                    <img src=" SU-57.jpeg">
+                    <p>Sarfraz Hussain</p>
+                </a>
+            </div>
+
+            <div class="member">
+                <a href="Shaheena Akhtar.html">
+                    <img src="SU57.jpeg">
+                    <p>Shaheena Akhtar</p>
+                </a>
+            </div>
+
+        </div>
     </div>
-    </table>
-    </head>
-
 </body>
 
 </html>
