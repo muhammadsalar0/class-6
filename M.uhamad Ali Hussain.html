@@ -15,6 +15,7 @@
             background: linear-gradient(to right, #00f7ff, #53a7ec);
             min-height: 660px;
             padding: 20px;
+            object-fit: cover;
         }
 
         .box {
@@ -33,17 +34,19 @@
             flex-direction: column;
             align-items: center;
         }
-
-        @media only screen and (max-width: 980px) {
+        @media only screen and (max-width: 600px) {
             table {
                 width: 100%;
                 font-size: 14px;
+                border-collapse: collapse;
             }
 
             td {
                 display: block;
                 width: 100%;
                 text-align: center;
+                border: none;
+                border-bottom: 1px solid #ccc;
             }
 
             .box {
@@ -60,8 +63,9 @@
     </style>
 </head>
 
-<body>  
-        <table style="border-collapse: collapse; border: 1px solid black;">
+<body>
+    <div class="center color-bg">
+        <table>
             <tbody>
                 <tr>
                     <td class="box">Birth day</td>
@@ -84,7 +88,6 @@
                     <td class="box">Ansari</td>
                 </tr>
             </tbody>
-        </table>
         </table>
 
         <p class="content-center">
