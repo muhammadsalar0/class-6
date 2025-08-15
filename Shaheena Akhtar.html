@@ -1,53 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-table, th, td{
-    border:1px solid rgb(117, 101, 101)
-}
-.box{
-    margin: 20px;
-       padding: 20px;
-}
-.center{
-width:100%;
-display: flex;
-justify-content:center;
 
-}
-.color-bg {
-            background: linear-gradient(to right, #00f7ff, #53a7ec);
-            height: 660px;
-}
-    </style>
 <head>
-    
-    <title>Shaheena Akhtar</title>
+    <meta charset="UTF-8">
+    <title>M.uhamad Ali Hussain</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid rgb(117, 101, 101);
+            object-fit: cover;
+          
+        }
+   
+
+        .color-bg {
+            background: linear-gradient(to right, #00f7ff, #53a7ec);
+            min-height: 660px;
+            padding: 20px;
+    padding-bottom: 100%;
+        }
+
+
+        .box {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .content-center {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .center {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @media only screen and (max-width: 600px) {
+            table {
+                width: 100%;
+                font-size: 14px;
+                border-collapse: collapse;
+            }
+
+            td {
+                display: block;
+                width: 100%;
+                text-align: center;
+                border: none;
+                border-bottom: 1px solid #ccc;
+            }
+
+            .box {
+                padding: 10px;
+                margin: 5px 0;
+            }
+
+            .content-center {
+                padding: 10px;
+                font-size: 14px;
+                text-align: center;
+            }
+            p{
+
+font-size: xx-large;
+
+            }
+        }
+
+    </style>
 </head>
+
 <body>
     <div class="center color-bg">
-    <table style="border-collapse: collapse; border: 1px solid black;"><tr>
-<td  class="box">Birth day</td>
-<td  class="box">1st december</td>
-    </tr>
-<tr>
-<td  class="box">Father name</td>
-<td  class="box"></td>
-    </tr>
-    <tr>
-<td  class="box">Father  job</td>
-<td  class="box">fruit juicer</td>
-    </tr>
-
-    <tr>
-<td  class="box">nationality</td>
-<td  class="box">PAKISTAN</td>
-    </tr>
-<tr>
-<td  class="box">CAST</td>
-<td  class="box">ansari</td>
-    </tr>
-</table>
-<p>Name:Shaheena Akhtar she is a phisics teacher she left teaching proffesion for kids and now she is a house wife </p>
+         <div class="table ">
+            <table class="">
+                <tr>
+                    <td class="box">Birth day</td>
+                    <td class="box">1st April 2015</td>
+                </tr>
+                <tr>
+                    <td class="box">Father name</td>
+                    <td class="box">Sarfaraz Hussain</td>
+                </tr>
+                <tr>
+                    <td class="box">Father job</td>
+                    <td class="box">Software Engineer</td>
+                </tr>
+                <tr>
+                    <td class="box">Nationality</td>
+                    <td class="box">Pakistan</td>
+                </tr>
+                <tr>
+                    <td class="box">Cast</td>
+                    <td class="box">Ansari</td>
+                </tr>
+            </tbody>
+        </table>
 </div>
+        <p class="content-center ball">
+            Name: MUHAMAD ALI HUSSAIN.  
+            HOBBIES: Loves to play outside and indoor games.  
+            Also enjoys video games, but less often.  
+            Favorite outdoor game: "Police and Thief".  
+            Favorite food: Pizza.  
+            He is good at studies and is the youngest brother.
+        </p>
+    </div>
 </body>
+
 </html>
