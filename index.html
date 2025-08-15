@@ -26,7 +26,7 @@
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 20px;
             justify-items: center;
             padding: 20px;
@@ -63,16 +63,17 @@
             padding-bottom: 40px;
         }
 
-        /* Fixed: Target .grid instead of .container */
-        @media only screen and (max-width: 600px) {
+
+        @media only screen and (max-width: 980px) {
             .grid {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                grid-template-columns: 1fr;
                 gap: 35px;
                 justify-items: center;
             }
 
             h1 {
-                font-size: 50px; /* smaller heading on mobile */
+                font-size: 50px;
+                /* smaller heading on mobile */
             }
         }
     </style>
@@ -130,5 +131,5 @@
         </div>
     </div>
 </body>
+
 </html>
-c
