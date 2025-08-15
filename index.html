@@ -63,18 +63,22 @@
             padding-bottom: 40px;
         }
 
+        /* Fixed: Target .grid instead of .container */
         @media only screen and (max-width: 600px) {
-    .grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 35px;
-        justify-items: center;
-    }
-}
+            .grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 35px;
+                justify-items: center;
+            }
 
+            h1 {
+                font-size: 50px; /* smaller heading on mobile */
+            }
+        }
     </style>
 </head>
 
-<body class="background-colour">
+<body>
 
     <div class="bold color-bg">
         <h1>Family-Info</h1>
@@ -83,42 +87,42 @@
 
             <div class="member">
                 <a href="Meer Jahan Hussain.html">
-                    <img src="">
+                    <img src="meer-jahan.jpg" alt="Meer Jahan Hussain">
                     <p>Meer Jahan Hussain</p>
                 </a>
             </div>
 
             <div class="member">
                 <a href="M.uhamad Ali Hussain.html">
-                    <img src="">
+                    <img src="muhammad-ali.jpg" alt="Muhamad Ali Hussain">
                     <p>Muhamad Ali Hussain</p>
                 </a>
             </div>
 
             <div class="member">
                 <a href="muhammad-salar-hussain.html">
-                    <img src="mirage.jpeg">
+                    <img src="mirage.jpeg" alt="Muhammad Salar Hussain">
                     <p>Muhammad-salar-hussain</p>
                 </a>
             </div>
 
             <div class="member">
                 <a href="Salma.html">
-                    <img src="j10.jpeg">
+                    <img src="j10.jpeg" alt="Salma">
                     <p>Salma</p>
                 </a>
             </div>
 
             <div class="member">
                 <a href="Sarfraz Hussain.html">
-                    <img src=" SU-57.jpeg">
+                    <img src="SU-57.jpeg" alt="Sarfraz Hussain">
                     <p>Sarfraz Hussain</p>
                 </a>
             </div>
 
             <div class="member">
                 <a href="Shaheena Akhtar.html">
-                    <img src="SU57.jpeg">
+                    <img src="SU57.jpeg" alt="Shaheena Akhtar">
                     <p>Shaheena Akhtar</p>
                 </a>
             </div>
@@ -127,3 +131,4 @@
     </div>
 </body>
 </html>
+c
